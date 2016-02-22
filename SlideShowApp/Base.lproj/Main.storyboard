@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideShowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IM-PT-1uw">
+                                <rect key="frame" x="160" y="434" width="0.0" height="0.0"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciu-52-QWM">
+                                <rect key="frame" x="234" y="434" width="38" height="30"/>
+                                <state key="normal" title="次へ"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LsP-Ah-4oD">
+                                <rect key="frame" x="160" y="434" width="0.0" height="0.0"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-cH-Vgb">
+                                <rect key="frame" x="123" y="354" width="75" height="30"/>
+                                <state key="normal" title="画像を見る"/>
+                                <connections>
+                                    <action selector="unwind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXq-5G-C3U"/>
+                                    <segue destination="A3A-DZ-GIN" kind="show" id="CAq-qE-8oi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-9u-qF2">
+                                <rect key="frame" x="41" y="434" width="42" height="30"/>
+                                <state key="normal" title="前へ"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="apple3" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-nB-mep">
+                                <rect key="frame" x="40" y="115" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ciu-52-QWM" secondAttribute="bottom" constant="104" id="4Ro-cU-7cm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ciu-52-QWM" secondAttribute="trailing" constant="32" id="4SR-VA-6Vm"/>
+                            <constraint firstItem="Yfd-nB-mep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RhC-UT-04b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pep-9u-qF2" secondAttribute="bottom" constant="104" id="T9p-HB-I9P"/>
+                            <constraint firstItem="ciu-52-QWM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="218" id="WAh-aq-0J0"/>
+                            <constraint firstItem="ciu-52-QWM" firstAttribute="top" secondItem="6IM-PT-1uw" secondAttribute="bottom" id="cFh-EG-2Ew"/>
+                            <constraint firstItem="Pep-9u-qF2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="414" id="nPZ-pt-lHV"/>
+                            <constraint firstItem="ciu-52-QWM" firstAttribute="leading" secondItem="Pep-9u-qF2" secondAttribute="trailing" constant="151" id="oTb-yK-ZxG"/>
+                            <constraint firstItem="6IM-PT-1uw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rci-27-Ka8"/>
+                            <constraint firstItem="LsP-Ah-4oD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vRx-bO-N9W"/>
+                            <constraint firstItem="Pep-9u-qF2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="veJ-m0-5Mj"/>
+                            <constraint firstItem="nhB-cH-Vgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y7q-jv-YVE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="image" destination="Yfd-nB-mep" id="aED-xN-UGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="DdG-iQ-HfR">
+            <objects>
+                <viewController id="A3A-DZ-GIN" customClass="ResultViewController" customModule="SlideShowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3lO-tb-pt2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zfv-yU-3pX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jYd-5t-bfV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woi-pQ-2Vx">
+                                <rect key="frame" x="8" y="33" width="305" height="366"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uja-4U-AUh">
+                                <rect key="frame" x="86" y="431" width="150" height="30"/>
+                                <state key="normal" title="スライドショーに戻る"/>
+                                <connections>
+                                    <segue destination="VQI-9U-aIW" kind="unwind" unwindAction="unwind:" id="iqa-qq-WNq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uja-4U-AUh" firstAttribute="centerX" secondItem="jYd-5t-bfV" secondAttribute="centerX" id="SBe-ZJ-tuF"/>
+                            <constraint firstItem="woi-pQ-2Vx" firstAttribute="centerX" secondItem="jYd-5t-bfV" secondAttribute="centerX" id="svt-EE-XOH"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="picture" destination="woi-pQ-2Vx" id="4Ng-S6-68I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iw-D0-Yqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VQI-9U-aIW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple3" width="372" height="278"/>
+    </resources>
+</document>
