@@ -17,9 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var image1 = images[0]
-        var image2 = images[1]
-        var image3 = images[2]
+        image.image = images[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +32,24 @@ class ViewController: UIViewController {
         resultViewController.photo = image.image!
     }
     
+    var i = 0
+    @IBAction func nextpath(sender: AnyObject) {
+        var count = images.count
+        i += 1
+        if i == count{
+            i = 0
+    }
+        image.image = images[i]
+    }
+    
+    @IBAction func backpath(sender: AnyObject) {
+        var count = images.count
+        if i == 0{
+            i = count
+        }
+         i -= 1
+        image.image = images[i]
+    }
 
     @IBAction func unwind(segue: UIStoryboardSegue) {
         
