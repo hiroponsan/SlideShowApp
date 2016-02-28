@@ -42,15 +42,15 @@ class ViewController: UIViewController {
     
 
     var num = 2
+    weak var timer: NSTimer?
     @IBAction func slidestart(sender: AnyObject) {
-        weak var timer: NSTimer?
-        timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "nextpath:", userInfo: nil, repeats: true)
         num += 1
         if num % 2 == 1 {
         start.setTitle("停止", forState: .Normal)
             nextbutton.enabled = false
             backbutton.enabled = false
             showphoto.enabled = false
+            timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "nextpath:", userInfo: nil, repeats: true)
         }
         else if num % 2 == 0{
         timer?.invalidate()
