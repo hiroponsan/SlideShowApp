@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IM-PT-1uw">
@@ -34,18 +34,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LsP-Ah-4oD">
                                 <rect key="frame" x="160" y="434" width="0.0" height="0.0"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-cH-Vgb">
-                                <rect key="frame" x="46" y="28" width="234" height="197"/>
-                                <state key="normal" title="画像を見る">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="unwind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXq-5G-C3U"/>
-                                    <segue destination="A3A-DZ-GIN" kind="show" id="CAq-qE-8oi"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ema1" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-nB-mep">
-                                <rect key="frame" x="40" y="42" width="240" height="128"/>
+                                <rect key="frame" x="30" y="42" width="250" height="174"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-9u-qF2">
                                 <rect key="frame" x="46" y="434" width="67" height="30"/>
@@ -78,6 +68,16 @@
                                     <segue destination="A3A-DZ-GIN" kind="show" id="RAb-Au-QHR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-cH-Vgb">
+                                <rect key="frame" x="26" y="28" width="274" height="245"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unwind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXq-5G-C3U"/>
+                                    <segue destination="A3A-DZ-GIN" kind="show" id="CAq-qE-8oi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -90,14 +90,14 @@
                             <constraint firstItem="nhB-cH-Vgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y7q-jv-YVE"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="backbutton" destination="Pep-9u-qF2" id="lBE-UY-oeh"/>
                         <outlet property="image" destination="Yfd-nB-mep" id="aED-xN-UGb"/>
                         <outlet property="nextbutton" destination="ciu-52-QWM" id="v1p-qE-2Ch"/>
                         <outlet property="showphoto" destination="nhB-cH-Vgb" id="zjU-Hv-UYU"/>
                         <outlet property="start" destination="AcN-g0-PZU" id="J3w-mf-yoU"/>
-                        <outlet property="zoombutton" destination="4ac-Oa-9g2" id="Nch-fZ-27m"/>
+                        <outlet property="zoombutton" destination="4ac-Oa-9g2" id="NjF-xm-wke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
