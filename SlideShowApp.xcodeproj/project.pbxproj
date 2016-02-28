@@ -405,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideShowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hirpon.com.SlideShowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideShowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hirpon.com.SlideShowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +489,7 @@
 				EA0427E61C7B0BAB0012322D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA0427E71C7B0BAB0012322D /* Build configuration list for PBXNativeTarget "SlideShowAppTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +498,7 @@
 				EA0427E91C7B0BAB0012322D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA0427EA1C7B0BAB0012322D /* Build configuration list for PBXNativeTarget "SlideShowAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +507,7 @@
 				EA0427EC1C7B0BAB0012322D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

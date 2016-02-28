@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var showphoto: UIButton!
     @IBOutlet weak var zoombutton: UIButton!
     
-    
     let images = [UIImage(named: "ema1"), UIImage(named: "ema2"), UIImage(named: "ema3"),
                   UIImage(named: "ema4"), UIImage(named: "ema5"), UIImage(named: "ema6"),
                   UIImage(named: "ema7"), UIImage(named: "ema8"), UIImage(named: "ema9"),
@@ -40,7 +39,6 @@ class ViewController: UIViewController {
         // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
         resultViewController.photo = image.image!
     }
-    
     
 
     var num = 2
