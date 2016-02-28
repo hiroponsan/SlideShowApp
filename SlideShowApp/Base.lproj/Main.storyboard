@@ -45,7 +45,7 @@
                                     <segue destination="A3A-DZ-GIN" kind="show" id="CAq-qE-8oi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="apple1" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-nB-mep">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ema1" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-nB-mep">
                                 <rect key="frame" x="40" y="42" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-9u-qF2">
@@ -82,13 +82,16 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="backbutton" destination="Pep-9u-qF2" id="lBE-UY-oeh"/>
                         <outlet property="image" destination="Yfd-nB-mep" id="aED-xN-UGb"/>
+                        <outlet property="nextbutton" destination="ciu-52-QWM" id="v1p-qE-2Ch"/>
+                        <outlet property="showphoto" destination="nhB-cH-Vgb" id="zjU-Hv-UYU"/>
                         <outlet property="start" destination="AcN-g0-PZU" id="J3w-mf-yoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="291"/>
+            <point key="canvasLocation" x="71" y="283"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="DdG-iQ-HfR">
@@ -134,6 +137,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apple1" width="410" height="415"/>
+        <image name="ema1" width="434" height="426"/>
     </resources>
 </document>

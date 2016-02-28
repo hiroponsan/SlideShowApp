@@ -12,8 +12,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var start: UIButton!
+    @IBOutlet weak var nextbutton: UIButton!
+    @IBOutlet weak var backbutton: UIButton!
+    @IBOutlet weak var showphoto: UIButton!
     
-    let images = [UIImage(named: "apple1"), UIImage(named: "apple2"), UIImage(named: "apple3")]
+    let images = [UIImage(named: "ema1"), UIImage(named: "ema2"), UIImage(named: "ema3"),
+                  UIImage(named: "ema4"), UIImage(named: "ema5"), UIImage(named: "ema6"),
+                  UIImage(named: "ema7"), UIImage(named: "ema8"), UIImage(named: "ema9"),
+                  UIImage(named: "ema10")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +40,27 @@ class ViewController: UIViewController {
     }
     
     
+
+    var num = 2
     
-    var num = 0
     @IBAction func slidestart(sender: AnyObject) {
         num += 1
-        if num % 1 == 0 {
+        if num % 2 == 1 {
          var timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: Selector("nextpath:"), userInfo: nil, repeats: true)
+            timer.fire()
         start.setTitle("停止", forState: .Normal)
+            nextbutton.enabled = false
+            backbutton.enabled = false
+            showphoto.enabled = false
         }
-        if num % 2 == 0{
+        else if num % 2 == 0{
+            var timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: Selector("nextpath:"), userInfo: nil, repeats: true)
+            timer.invalidate()
         start.setTitle("再生", forState: .Normal)
+            nextbutton.enabled = true
+            backbutton.enabled = true
+            showphoto.enabled = true
         }
-        print(num)
     }
     
     
