@@ -35,8 +35,7 @@
                                 <rect key="frame" x="160" y="434" width="0.0" height="0.0"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-cH-Vgb">
-                                <rect key="frame" x="46" y="354" width="234" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.3632827226864952" blue="0.45333681322507202" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="46" y="28" width="234" height="197"/>
                                 <state key="normal" title="画像を見る">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
@@ -69,10 +68,21 @@
                                     <action selector="slidestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5t-Pn-81Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ac-Oa-9g2">
+                                <rect key="frame" x="73" y="342" width="185" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.30965809719999998" blue="0.69681757359999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="画像を見る">
+                                    <color key="titleColor" red="0.99232187790000004" green="0.90023833799999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="A3A-DZ-GIN" kind="show" id="RAb-Au-QHR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ciu-52-QWM" secondAttribute="trailing" constant="32" id="4SR-VA-6Vm"/>
+                            <constraint firstItem="4ac-Oa-9g2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EzO-j7-PIA"/>
                             <constraint firstItem="AcN-g0-PZU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H7h-zz-A0c"/>
                             <constraint firstItem="Yfd-nB-mep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RhC-UT-04b"/>
                             <constraint firstItem="6IM-PT-1uw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rci-27-Ka8"/>
@@ -87,6 +97,7 @@
                         <outlet property="nextbutton" destination="ciu-52-QWM" id="v1p-qE-2Ch"/>
                         <outlet property="showphoto" destination="nhB-cH-Vgb" id="zjU-Hv-UYU"/>
                         <outlet property="start" destination="AcN-g0-PZU" id="J3w-mf-yoU"/>
+                        <outlet property="zoombutton" destination="4ac-Oa-9g2" id="Nch-fZ-27m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,4 +150,7 @@
     <resources>
         <image name="ema1" width="434" height="426"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RAb-Au-QHR"/>
+    </inferredMetricsTieBreakers>
 </document>

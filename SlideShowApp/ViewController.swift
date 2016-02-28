@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextbutton: UIButton!
     @IBOutlet weak var backbutton: UIButton!
     @IBOutlet weak var showphoto: UIButton!
+    @IBOutlet weak var zoombutton: UIButton!
     
     let images = [UIImage(named: "ema1"), UIImage(named: "ema2"), UIImage(named: "ema3"),
                   UIImage(named: "ema4"), UIImage(named: "ema5"), UIImage(named: "ema6"),
@@ -50,6 +51,7 @@ class ViewController: UIViewController {
             nextbutton.enabled = false
             backbutton.enabled = false
             showphoto.enabled = false
+            zoombutton.enabled = false
             timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "nextpath:", userInfo: nil, repeats: true)
         }
         else if num % 2 == 0{
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
             nextbutton.enabled = true
             backbutton.enabled = true
             showphoto.enabled = true
+            zoombutton.enabled = true
         }
     }
     
