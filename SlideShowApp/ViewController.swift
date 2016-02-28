@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var start: UIButton!
     
     let images = [UIImage(named: "apple1"), UIImage(named: "apple2"), UIImage(named: "apple3")]
 
@@ -31,6 +32,22 @@ class ViewController: UIViewController {
         // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
         resultViewController.photo = image.image!
     }
+    
+    
+    
+    var num = 0
+    @IBAction func slidestart(sender: AnyObject) {
+        num += 1
+        if num % 1 == 0 {
+         var timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: Selector("nextpath:"), userInfo: nil, repeats: true)
+        start.setTitle("停止", forState: .Normal)
+        }
+        if num % 2 == 0{
+        start.setTitle("再生", forState: .Normal)
+        }
+        print(num)
+    }
+    
     
     var i = 0
     @IBAction func nextpath(sender: AnyObject) {
